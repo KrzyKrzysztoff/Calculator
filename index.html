@@ -18,36 +18,36 @@
         </tr>
         <tr>
             <td class="result-window" colspan="4">
-                0
+                <div id="result">0</div>
             </td>
         </tr>
         <tr>
-            <td class="black-keys">AC</td>
-            <td class="black-keys">+/-</td>
+            <td onclick="deleteResult()" class="black-keys">AC</td>
+            <td onclick="negation()" class="black-keys">+/-</td>
             <td class="black-keys">%</td>
             <td class="orange-keys">/</td>
         </tr>
         <tr>
-            <td class="grey-keys">7</td>
-            <td class="grey-keys">8</td>
-            <td class="grey-keys">9</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">7</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">8</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">9</td>
             <td class="orange-keys">X</td>
         </tr>
         <tr>
-            <td class="grey-keys">4</td>
-            <td class="grey-keys">5</td>
-            <td class="grey-keys">6</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">4</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">5</td>
+            <td onclick="setNumber(this.innerText)"class="grey-keys">6</td>
             <td class="orange-keys">-</td>
         </tr>
         <tr>
-            <td class="grey-keys">1</td>
-            <td class="grey-keys">2</td>
-            <td class="grey-keys">3</td>
-            <td class="orange-keys">+</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">1</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys">2</td>
+            <td onclick="setNumber(this.innerText)"class="grey-keys">3</td>
+            <td onclick="add()" class="orange-keys">+</td>
         </tr>
         <tr>
-            <td class="grey-keys" colspan="2">0</td>
-            <td class="grey-keys">.</td>
+            <td onclick="setNumber(this.innerText)" class="grey-keys" colspan="2">0</td>
+            <td onclick="addComma()" class="grey-keys">.</td>
             <td class="orange-keys">=</td>
         </tr>
         </table>
